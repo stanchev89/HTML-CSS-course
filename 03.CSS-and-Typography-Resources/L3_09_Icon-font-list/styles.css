@@ -1,0 +1,13 @@
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/all.css');
+html {
+    font-family: Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+section {
+    margin:100px;
+}
+
+article {
+    margin:30px;
+}

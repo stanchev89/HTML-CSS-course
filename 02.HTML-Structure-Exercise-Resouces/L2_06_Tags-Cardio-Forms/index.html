@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label for="first-name">
+                    First Name
+                    <input type="text" id="first-name" autofocus placeholder="George">
+                </label>
+            </div>
+            <div>
+                <label for="last-name">
+                    Last Name
+                    <input type="text" id="last-name" type="text" placeholder="Devis">
+                </label>
+            </div>
+            <div>
+                <label for="male">
+                    Male
+                    <input id="male" type="radio" name="gender">
+                </label>
+                <label for="female">
+                    Female
+                    <input id="female" type="radio" name="gender">
+                </label>
+                <label for="other">
+                    Other
+                    <input id="other" type="radio" name="gender">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Preferred contact method:
+                    <label for="email-method">
+                        Email
+                        <input type="radio" id="email-method">
+                    </label>
+                    <label for="phone-method">
+                        Phone
+                        <input type="radio" id="phone-method">
+                    </label>
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    Email
+                    <input type="email" id="email" placeholder="your@email.com">
+                </label>
+            </div>
+            <div>
+                <label for="phone">
+                    Phone
+                    <input type="number" id="phone" placeholder="+359885236225">
+                </label>
+            </div>
+            <div>
+                <label for="city">
+                    Town
+                    <select id="city">
+                        <option value="Varna">Varna</option>
+                        <option value="Plovdiv">Plovdiv</option>
+                        <option value="Burgas">Burgas</option>
+                        <option value="Sofia">Sofia</option>
+                        <option value="Pleven">Pleven</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="age">
+                    Age
+                    <input id="age" type="number" min="18" max="70">
+                </label>
+            </div>
+            <div>
+                <label for="programming-language">
+                    Programming language
+                    <input list="programming-languages" id="programming-language">
+                    <datalist id="programming-languages">
+                        <option value="Java"></option>
+                        <option value="PHP"></option>
+                        <option value="C#"></option>
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="Ruby"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <textarea name="" id="" cols="20" rows="5" placeholder="More information..."></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="agreement">
+                    <input id="agreement" type="checkbox" checked>
+                    I agree the Terms and Conditions
+                </label>
+            </div>
+            <div>
+                <label for="send">
+                    <input type="submit" id="send" value="Send">
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

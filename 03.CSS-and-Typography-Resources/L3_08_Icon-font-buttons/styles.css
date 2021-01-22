@@ -1,0 +1,23 @@
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/all.css');
+
+p {
+    margin:40px;
+}
+
+a {
+    border: 1px solid rgb(55,125,34);
+    border-radius: 3px;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange {
+    background-color: rgb(240,145,53);
+    border-color: rgb(240,145,53);
+}
+
+.green {
+    background-color: rgb(55,125,34);
+}
