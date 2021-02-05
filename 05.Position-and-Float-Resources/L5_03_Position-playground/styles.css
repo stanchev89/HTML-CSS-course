@@ -9,8 +9,8 @@ body {
 
 .viewport {
     position: relative;
-    width: 100%;
-    height: 50%
+    width: 100vw;
+    height: 100vh;
 }
 
 .card {
@@ -22,31 +22,24 @@ body {
 }
 
 .card.blue {
-    height: 629px;
     background: rgb(47,97,152);
     background: linear-gradient(90deg, rgba(47,97,152,1) 0%, rgba(107,198,163,1) 50%);
 }
 
 .card.orange {
-    top: 629px;
     background: rgb(169,52,118);
     background: linear-gradient(90deg, rgba(169,52,118,1) 0%, rgba(210,128,20,1) 50%);
 }
 
 .card img {
     position: relative;
-    max-width: 350px;
-    left: 40%;
-    max-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    max-width: 400px;
+    box-shadow: 0px 3px 15px 3px black;
 }
 
-.card.blue img {
-    top: 30%;
-}
-
-.card.orange img {
-    top: 6%;
-}
 
 .orange-star {
     position: absolute;
