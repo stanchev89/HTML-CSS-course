@@ -1,0 +1,39 @@
+html {
+    font-family: Georgia, serif;
+    font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1.2em;
+}
+
+body,ul,li {
+    display:flex;
+    align-items: stretch;
+}
+
+body {
+    background: #EEEEEE;
+
+}
+
+.gallery {
+    margin:auto;
+    max-width: 70vw;
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.gallery ul {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+
+img {
+    object-fit: contain;
+    background: white;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 20px 0px;
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238 238 238);
+    font-family: Georgia,serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+main {
+    margin-left:20%;
+}
+
+header {
+    margin: 50px 100px 0px 100px;
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin: 0px 100px 50px 100px;
+}
+
+header .site-title {
+    font-family:Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+h2, h1 {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+}
+
+
+a {
+    color:rgb(0,153,0);
+    text-decoration: none;
+}
+
+.header-nav ul li {
+    padding-right: 10px;
+    display: inline-block;
+}
