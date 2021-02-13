@@ -1,0 +1,96 @@
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Georgia,serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+.page {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 20px auto;
+}
+
+header {
+    display:flex;
+    flex-basis: 100%;
+    margin:auto;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+header .site-title {
+    font-family:Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content-top {
+    flex-basis: 80%;
+    margin-right: 50px;
+}
+
+h2, h1 {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+}
+
+.content-top img {
+    float: right;
+    height: 210px;
+    max-height: 246px;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 4px;
+}
+
+blockquote {
+    opacity: .4;
+    float: right;
+    max-width: 50%;
+    margin: 10px;
+    font-style: oblique;
+    border-left: 3px solid black;
+    padding-left: 20px;
+    font-family: Georgia, serif;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-style: oblique;
+    margin: 30px 0 15px 0;
+}
+
+.content-bottom img {
+    float: left;
+    height: 135px;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 0 15px 15px 0;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+}
+
+aside {
+    display:flex;
+    flex-direction: column;
+}
+
+a {
+    color: rgb(0,153,0);
+    text-decoration: none;
+}
