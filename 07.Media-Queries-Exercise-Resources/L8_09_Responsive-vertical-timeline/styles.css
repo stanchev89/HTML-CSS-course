@@ -1,0 +1,131 @@
+html,
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.timeline::before {
+    position: absolute;
+    background: rgb(153, 153, 153);
+    right: 50%;
+    content: "";
+    border: 0.2rem rgb(153, 153, 153) solid;
+    top: 5.1%;
+    min-height: 95%;
+    overflow: hidden;
+}
+
+.timeline {
+    position: relative;
+    border: 0.3rem rgb(153, 153, 153) solid;
+    width:70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position:relative;
+}
+
+.timeline-title{
+    flex-basis:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.35%;
+
+}
+
+.timeline-title p {
+    border: 0.2rem rgb(153, 153, 153) solid;
+    padding:5px;
+}
+
+.timeline article:nth-child(even) {
+    align-items: flex-start;
+    align-self: flex-end;
+    margin-right: 10%;
+}
+
+.timeline article:nth-child(even)::before {
+    content: '';
+    border: 0.2rem rgb(153, 153, 153) solid;
+    position: absolute;
+    width: 20px;
+    min-height: 20px;
+    border-radius: 90px;
+    background: green;
+    left: -14%;
+    top: 12%;
+}
+
+.timeline article:nth-child(odd) {
+    margin-left: 10%;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.timeline article:nth-child(odd)::after {
+    content: '';
+    border: 0.2rem rgb(153, 153, 153) solid;
+    position: absolute;
+    width: 20px;
+    min-height: 20px;
+    border-radius: 90px;
+    background: orange;
+    right: -13%;
+    top: 12%;
+}
+
+
+.event {
+    position: relative;
+    display: flex;
+    width: 36%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.event-header-title {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul li {
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .timeline article:nth-child(odd) {
+        align-items: flex-start;
+        align-self: flex-end;
+        margin-right: 10%;
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    .timeline article:nth-child(odd)::after {
+        content: '';
+        border: 0.2rem rgb(153, 153, 153) solid;
+        position: absolute;
+        width: 20px;
+        min-height: 20px;
+        border-radius: 90px;
+        background: orange;
+        left: -20%;
+        top: 7%;
+    }
+
+    ul {
+        padding-left:0;
+    }
+}
