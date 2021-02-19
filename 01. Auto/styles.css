@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 200px auto;
+    padding:10px;
+    max-height: 550px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-height: 550px;
+    margin-right: 20px;
+}
+
+.content,
+.image {
+    width: 50%;
+}
+
+.content-heading-title{
+    margin-top:0;
+}
+
+.content-heading p {
+    color:gray;
+
+}
+
+.content-benefits {
+    flex-flow: column;
+    height: 40%;
+}
+
+.content-benefits, 
+.content-benefits-item{
+    display:flex;
+}
+
+.content-benefits-item{
+    height: 30%;
+    margin-bottom: 5px;
+}
+
+.content-benefits-item-description{
+    margin-top:10px;
+}
+
+.content-benefits-item-description h3 {
+    font-weight: bold;
+    margin:0;
+    font-size: .8rem;
+}
+
+.content-benefits-item-description p {
+    color:gray;
+    font-size: .8rem;
+    margin-top:5px;
+}
+.content-benefits-item-icon{
+    width: 15%;
+}
+
+.content-benefits-item-icon img {
+    margin-right: 30px;
+    max-height: 100%;
+    margin-right: 0px;
+}
+
+.image img {
+    width: 100%;
+}

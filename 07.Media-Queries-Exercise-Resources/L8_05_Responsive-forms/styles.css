@@ -1,0 +1,88 @@
+@import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
+
+html,
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 40px;
+    border-radius: 3px;
+    position: relative;
+}
+
+fieldset legend {
+    position: absolute;
+    top: -20px;
+    left: -2px;
+    border: 1px solid black;
+    background: #F8F8F8;
+    padding:8px;
+    width: 150px;
+    border-radius: 3px;
+}
+
+.login-section-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #F8F8F8;
+    max-width: 500px;
+    margin:100px auto;
+}
+
+.login-section-form label {
+    display: flex;
+    font-weight: bold;
+    padding-bottom: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.login-section-form input {
+    flex-grow: 1;
+    margin-left:10px;
+    border:1px solid lightgray;
+    border-radius: 3px;
+    padding:8px;
+    padding-left: 40px;
+}
+
+.login-section-btn {
+    width:60px;
+    border:none;
+    border-radius: 3px;
+    background: #2D2D2D;
+    color:white;
+    padding:5px;
+    font-weight: bold;
+}
+
+i {
+    position: absolute;
+    left:103px;
+}
+
+
+@media screen and (max-width:992px) {
+    .login-section {
+        max-width: 400px;
+    }
+    .login-section-form label{
+        flex-direction: column;
+    }
+    .login-section-form input{
+        width: 100%;
+        padding-left: 30px;
+    }
+    i {
+        top: 57px;
+        left: 12px;
+    }
+}
