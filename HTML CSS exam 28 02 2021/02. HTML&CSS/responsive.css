@@ -1,0 +1,36 @@
+@media screen and (max-width:600px) {
+    .navigation {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .navigation-logo-wrapper {
+        margin-bottom: 20px;
+    }
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-img-wrapper {
+        display: none;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefit {
+        margin-bottom: 20px;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-section-item {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html,
+*::after,
+*::before,
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica,sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 25vh;
+    width: 100%;
+    background: #40BEAD;
+    justify-content: center;
+}
+
+.header-wrapper {
+    width: 80%;
+    max-height: 100px;
+}
+
+.nav-bar {
+    height: 100px;
+    max-height: 20%;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar img {
+    width: 100px;
+    margin:10px;
+}
+
+.nav-bar-list {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    color:white;
+    font-size: .9rem;
+}
+
+.nav-bar-list li {
+    margin:10px;
+}
+
+
+
+.heading{
+    background: #FFB301;
+    width: 100%;
+    max-height: 70%;}
+
+.heading-wrapper {
+    font-size: .8rem;
+    max-height: 100%;
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    color:white;
+}
+
+.heading-wrapper h2 {
+    margin-bottom:10px;
+}
+
+main {
+    height: 60vh;
+}
+
+.teachers {
+    width:90%;
+    padding:50px;
+    display:flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+
+.teachers-heading {
+    display: flex;
+    justify-content: space-around;
+}
+
+.techers-heading-item {
+    display: flex;
+    width: 30%;
+    height: 100%;
+}
+
+.techers-heading-item img {
+    width:100%;
+    min-width: 120px;
+    border-radius: 100px;
+    border:5px solid #40BEAD;
+}
+
+.teachers-heading-item-content {
+    font-size: .8rem;
+    margin-left: 20px;
+}
+
+.teachers-heading-item-content h3 {
+    color: #40BEAD;
+}
+.position {
+    color:gray;
+    font-size: .7rem;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.teachers-list{
+    display: flex;
+    width: 80%;
+    margin:150px auto 0 auto;
+}
+
+.teacher-list-item {
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher-list-item img {
+    width: 40%;
+    border-radius: 100px;
+    border:5px solid #40BEAD;
+}
+
+.teacher-list-item h4{
+    color: #40BEAD;
+    margin:10px;
+}
+
+.teacher-list-item p {
+    font-size: .7rem;
+    color:gray;
+}
+
+.teachers-footer{
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #66B9F8;
+    color:white;
+}
+.footer-heading {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.footer-heading p {
+    font-size: .8rem;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.footer-heading input {
+    padding:5px;
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+}
+.footer-heading input::placeholder {
+    color:white;
+}
+
+.footer-heading button {
+    font-weight: bold;
+    color:white;
+    background: #FF9101;
+    padding:5px 20px;
+    border:none;
+    border-radius:30px;
+    margin-left: 30px;
+}
+

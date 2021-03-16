@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+
+html,
+*::after,
+*::before,
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    box-sizing: inherit;
+    margin:0;
+    padding: 0;
+    background: #64B9F8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat, sans-serif;
+}
+
+p {
+    font-family: Helvetica,sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 94vw;
+    margin: 50px auto;
+}
+.content-title{
+    flex-basis:100%;
+    text-align: center;
+    color: white;
+    margin: 50px;
+    font-weight: bold;
+}
+.item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px 0;
+    border-radius: 12px;
+}
+
+.item-title {
+    color: #FD9F23;
+    font-size: 1.4rem;
+    
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background: #FFFFFF;
+    border-bottom-right-radius:12px;
+    border-bottom-left-radius: 12px;
+    padding: 15px;
+}
+
+.item-date,.item-date-calendar,.item-date-time {
+    display: flex;
+    margin-right: 0;
+}
+.item-date {
+    margin:10px 10px 10px 0;
+    justify-content: flex-start;
+}
+.item-date p {
+    color:gray;
+}
+.item-date-calendar {
+    margin-right: 20px;
+}
+.item-date-calendar img {
+    margin-right: 10px;
+}
+.item-date-time img {
+    margin-right: 10px;
+}
+
+.item-content-description {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.content-box-footer {
+    position: relative;
+    text-transform: uppercase;
+    color:#FD9F23;
+}
+
+.content-box-footer::after {
+    font-family: "Font Awesome 5 Free";
+    content:'\f054';
+    font-weight: 900;
+    margin-left: 10px;
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+    width:94vw;
+    margin:0 auto;
+}
+button {
+    padding: 15px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 200px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item-header {
+    width:100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0;
+}
